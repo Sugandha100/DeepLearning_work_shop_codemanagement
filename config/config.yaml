@@ -1,0 +1,18 @@
+- model_params:
+    lit_resnet:
+      accelerator: auto
+      lr: 0.05
+      max_epochs: 30
+      name: LitResnet
+      num_classes: 10
+      pretrained: false
+    swa_resnet:
+      lr: 0.01
+      name: SWAResnet
+- exp_params:
+    BATCH_SIZE: 64
+    METRICS_DIR: metrics
+    NUM_WORKERS: 8
+    PATH_DATASETS: data
+- log_params:
+    save_dir: logs/
